@@ -1,0 +1,17 @@
+const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+/*weekDays.forEach((element, index, array) => {
+    console.log(`${index+1}: ${element}`)
+});*/
+
+function forEachMy(array, callback){
+    for(var i=0; i < array.length; i++){
+        callback(array[i], i, array);
+    }
+}
+
+weekDays.forEachMy((element, index, array) => {
+    console.log(`${index+1}: ${element}`)
+});
+
+//TBD

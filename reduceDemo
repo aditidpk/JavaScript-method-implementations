@@ -1,0 +1,10 @@
+const initialValue = 5;
+const numbers = [5, 10, 15];
+
+const reducer = (accumulator, item) => {
+  return accumulator + item;
+};
+
+const total = numbers.reduce(reducer, initialValue)
+
+console.log(total);
